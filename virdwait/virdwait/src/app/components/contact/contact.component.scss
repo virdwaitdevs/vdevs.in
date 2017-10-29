@@ -1,0 +1,25 @@
+.container {
+    position: absolute;
+    height: 70%;
+    li {
+        &:hover {
+            background-color: #ccc;
+        }
+        cursor: pointer;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .row-seperator {
+        height: 20px;
+    }
+    .btn-primary {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .sep {
+        border-left: 1px solid #000;
+        padding-left: 30px;
+    }
+}

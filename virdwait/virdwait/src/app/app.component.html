@@ -1,0 +1,27 @@
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-header">
+            <button type="button" data-toggle="collapse" class="navbar-toggle collapsed" data-target="#nav-item" area-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-item">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a routerLink="home"><i class="fa fa-2x fa-home"></i>&ensp; Home</a></li>
+                <li><a routerLink="portfolio"><i class="fa fa-picture-o fa-2x"></i>&ensp; Portfolio</a></li>
+                <li><a routerLink="contact"><i class="fa fa-envelope-o fa-2x"></i>&ensp; Contact Us</a></li>
+                <li><a routerLink="about"><i class="fa fa-info-circle fa-2x"></i>&ensp; About Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="row logo">
+    <div class="col-md-3 col-lg-4 col-sm-3 col-xs-6 col-md-offset-1 col-lg-offset-1 col-sm-offset-1 col-xs-offset-1"><img class="img img-responsive" src="../assets/images/logo.png" /></div>
+</div>
+<router-outlet></router-outlet>
+
+<nav class="footer">
+    &#169; 2016-2017 Virdwait
+</nav>
