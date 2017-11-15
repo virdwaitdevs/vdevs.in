@@ -8,13 +8,10 @@ import {AngularFireAuthModule, AngularFireAuth} from 'angularfire2/auth';
 })
 export class ContactComponent implements OnInit {
   items: FirebaseListObservable<any[]>;
-  constructor(public af:AngularFireDatabase, public aAuth: AngularFireAuth) {
-    this.items = af.list('', {
-      query: {
-        limitToLast: 50
-      }
-    });
-    console.log(this.items);
+  constructor()//public af:AngularFireDatabase, public aAuth: AngularFireAuth) 
+  {
+    // this.items = af.list('/new');
+    // console.log(this.items);
    }
   type:string = 'pending';
   newPurpose:string = "new";
